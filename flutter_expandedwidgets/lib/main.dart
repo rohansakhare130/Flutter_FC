@@ -38,11 +38,13 @@ class DashBoardScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.red.shade500,
-
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red.shade500,
+                  ),
                 ),
                 Container(
                   width: 100,
@@ -52,11 +54,14 @@ class DashBoardScreen extends StatelessWidget {
                 Expanded(
                   flex: 3,
 
-                  child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8 ),
+                    child: Container(
 
-                    width: 50,
-                    height: 100,
-                    color: Colors.yellow.shade500,
+                      width: 50,
+                      height: 100,
+                      color: Colors.yellow.shade500,
+                    ),
                   ),
                 ),
 
@@ -96,6 +101,12 @@ class DashBoardScreen extends StatelessWidget {
                   margin:EdgeInsets.only(bottom:12),
                   height: 100,
                   color: Colors.red.shade500,
+
+                ),
+                Container(
+
+                  height: 100,
+                  color: Colors.lightGreenAccent,
 
                 ),
 
