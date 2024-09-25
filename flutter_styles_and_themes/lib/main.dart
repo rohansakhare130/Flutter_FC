@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +29,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red,
         title: const Text('Home Page'),
       ),
       body: Center(
@@ -91,7 +94,11 @@ class MyHomePage extends StatelessWidget {
                     textStyle: const TextStyle(color: Colors.white), // Text color
                   ),
                 child: const Text('Submit'), // Button text
+                  
                 ),
+                const SizedBox(height: 20),
+                Text('Current Time: ${DateFormat('Hms').format(time)}')
+
               ],
 
 

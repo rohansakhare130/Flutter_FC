@@ -41,8 +41,6 @@ class MyScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Material(
-      
-      // Column is a vertical, linear layout.
       child: Column(
         children: [
           MyAppBar(
